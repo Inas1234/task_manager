@@ -1,7 +1,8 @@
-FROM php:7.2-apache
+FROM node:14
 
-COPY src/ /var/www/html
-
-RUN apt-get update && apt-get install -y libpq-dev && docker-php-ext-install pdo pdo_pgsql
-
-EXPOSE 80
+WORKDIR /usr/src/app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 9000
+CMD ["npm", "start"]
