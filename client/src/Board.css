@@ -1,0 +1,52 @@
+/* TaskBoard.css */
+.task-board {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stages {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.stage:last-child {
+  margin-right: 0;
+}
+
+.stage h2 {
+  text-align: center;
+}
+
+/* TaskBoard.css */
+
+.logout-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}

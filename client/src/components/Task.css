@@ -1,0 +1,30 @@
+/* Task.css */
+
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  width: 200px;
+}
+
+.task h2 {
+  margin: 0 0 10px 0;
+}
+
+.task-dropdown {
+  margin: 10px 0;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
